@@ -94,6 +94,7 @@ const MenuSection = () => {
         <div className="mt-16 text-center animate-fade-in">
           <Button
             size="lg"
+            onClick={() => window.open('/menu.pdf', '_blank')}
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 shadow-elegant transition-elegant group"
           >
             View Full Menu

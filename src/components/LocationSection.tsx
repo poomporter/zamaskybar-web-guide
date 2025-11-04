@@ -51,9 +51,12 @@ const LocationSection = () => {
                 </div>
                 <div>
                   <h3 className="font-serif text-lg font-semibold text-foreground">Contact</h3>
-                  <p className="mt-1 text-muted-foreground">
+                  <a 
+                    href="tel:+66XXXXXXXXX" 
+                    className="mt-1 text-muted-foreground hover:text-accent transition-smooth block"
+                  >
                     +66 XX XXX XXXX
-                  </p>
+                  </a>
                 </div>
               </div>
 
@@ -63,9 +66,12 @@ const LocationSection = () => {
                 </div>
                 <div>
                   <h3 className="font-serif text-lg font-semibold text-foreground">Email</h3>
-                  <p className="mt-1 text-muted-foreground">
+                  <a 
+                    href="mailto:info@zama.asia" 
+                    className="mt-1 text-muted-foreground hover:text-accent transition-smooth block"
+                  >
                     info@zama.asia
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
