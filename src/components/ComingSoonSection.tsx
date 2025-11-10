@@ -69,36 +69,36 @@ const ComingSoonSection = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-2xl mx-auto backdrop-blur-sm bg-black/20 rounded-3xl py-12 shadow-elegant border border-white/10">
         {/* Logo */}
         <div className="mb-8 animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-serif text-primary mb-2">
+          <h1 className="text-6xl md:text-8xl font-serif text-primary mb-2 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
             ZAMĀ
           </h1>
-          <p className="text-xl md:text-2xl text-accent tracking-[0.3em] uppercase">
+          <p className="text-xl md:text-2xl text-accent tracking-[0.3em] uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             Skybar
           </p>
         </div>
 
         {/* Coming Soon */}
         <div className="mb-12 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-serif text-white mb-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
             Coming Soon
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-2">
+          <p className="text-lg md:text-xl text-white/90 mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             Rise above the sea, where light meets luxury.
           </p>
-          <p className="text-base md:text-lg text-muted-foreground">
+          <p className="text-base md:text-lg text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             Pattaya's Highest Seaside Rooftop Experience
           </p>
         </div>
 
         {/* Email Form */}
         <div className="animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          <p className="text-lg text-foreground mb-6">
+          <p className="text-lg text-white mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             ลงทะเบียนเพื่อรับสิทธิพิเศษก่อนใคร
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -107,7 +107,7 @@ const ComingSoonSection = () => {
               placeholder="อีเมลของคุณ"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 bg-background/80 backdrop-blur-sm border-border/50 focus:border-primary text-foreground placeholder:text-muted-foreground"
+              className="flex-1 bg-white/95 backdrop-blur-sm border-white/30 focus:border-primary text-gray-900 placeholder:text-gray-600"
               required
             />
             <Button
@@ -118,20 +118,20 @@ const ComingSoonSection = () => {
               {isLoading ? "กำลังส่ง..." : "ลงทะเบียน"}
             </Button>
           </form>
-          <p className="text-sm text-muted-foreground mt-4">
+          <p className="text-sm text-white/70 mt-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
             เราจะไม่แชร์อีเมลของคุณกับผู้อื่น
           </p>
         </div>
 
         {/* Social Links */}
         <div className="mt-16 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-          <p className="text-sm text-muted-foreground mb-4">ติดตามเราได้ที่</p>
+          <p className="text-sm text-white/80 mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">ติดตามเราได้ที่</p>
           <div className="flex justify-center gap-6">
             <a
               href="https://instagram.com/zamaskybar"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary transition-colors"
+              className="text-white/70 hover:text-primary transition-colors drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]"
             >
               Instagram
             </a>
@@ -139,7 +139,7 @@ const ComingSoonSection = () => {
               href="https://facebook.com/zamaskybar"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary transition-colors"
+              className="text-white/70 hover:text-primary transition-colors drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]"
             >
               Facebook
             </a>
@@ -147,7 +147,7 @@ const ComingSoonSection = () => {
               href="https://line.me"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary transition-colors"
+              className="text-white/70 hover:text-primary transition-colors drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]"
             >
               LINE
             </a>
