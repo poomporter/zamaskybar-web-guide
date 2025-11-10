@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import bgImage from "@/assets/coming-soon-bg.jpg";
 
 const ComingSoonSection = () => {
   const [email, setEmail] = useState("");
@@ -60,19 +61,15 @@ const ComingSoonSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
+      {/* Background Image */}
+      <img
+        src={bgImage}
+        alt="ZAMĀ Skybar Sunset View"
         className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/hero-sunrise.mp4" type="video/mp4" />
-      </video>
+      />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
